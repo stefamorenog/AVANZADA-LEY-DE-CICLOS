@@ -57,7 +57,7 @@
             </tr>
         </tbody>
     </table>
-    <a href="index.php"><button>Regresar</button></a>
+    <a class="btn btn-outline-success me-2" type="button" href="Registro.php">Regresar</a>
     </div>
 </body>
 </html>
