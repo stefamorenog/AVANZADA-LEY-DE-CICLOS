@@ -27,7 +27,7 @@
         </li>
       </ul>
     </div>
-    </div>
+
         </nav>
     <h1 class="container-md">Chicas Magicas Actualmente Registradas</h1>
     <table>
@@ -58,6 +58,7 @@
         </tbody>
     </table>
     <a class="btn btn-outline-success me-2" type="button" href="Registro.php">Regresar</a>
+   
     </div>
 </body>
 </html>

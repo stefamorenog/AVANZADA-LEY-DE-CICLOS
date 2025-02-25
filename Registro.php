@@ -30,21 +30,29 @@
     </div>
         </nav>  
         <h1>Registro de chicas magicas</h1>
-        <form action="" class="mb-3">
-            <label class="form-label" for="nombre">Nombre Chica Magica</label>
+        <form action="">
+            <div class="form-floating">
             <input class="form-control" type="text" id="nombre" placeholder="Nombre">
-            <label class="form-label" for="edad">Edad Chica Magica</label>
+            <label class="form-label" for="nombre">Nombre Chica Magica</label>
+            </div>
+
+            <div class="form-floating">
             <input class="form-control" type="text" id="edad" placeholder="Edad">
+            <label class="form-label" for="edad">Edad Chica Magica</label>
+            </div>
+            
             <label class="form-label" for="ciudad">Ciudad Chica Magica</label>
             <input class="form-control" type="text" id="ciudad" placeholder="Ciudad origen">
+            
             <label class="form-label" for="estado">Estados</label>
             <select class="form-select" name="estado" id="estado">
                 <option value="1">Activa</option>
                 <option value="2">Desaparecida</option>
                 <option value="3">Rescatada por la ley de los ciclos</option>
             </select>
+           
             <label class="form-label" for="contrato">Fecha de contrato Chica Magica</label>
-            <input class="form-control" type="date" id="contrato" min="2025-02-23"><br>  
+            <input class="form-control" type="date" id="contrato" min="2025-02-23">
             <a class="btn btn-outline-success me-2" type="button" href="Registro.php">Registrar chica magica!</a>
         </form> 
    
