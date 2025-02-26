@@ -8,27 +8,24 @@
 </head>
 <body>
     <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-warning">
         <div class="container-fluid">
-        <a class="navbar-brand" href="Index.php"><h2>LEY DE LOS CICLOS</h2></a>
+        <a class="navbar-brand  text-white" href="Index.php"><h2>LEY DE LOS CICLOS</h2></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link ml-5" href="Perfil.php"><h4>Perfiles</h4></a>
+          <a class="nav-link text-white" href="Registro.php"><h4>Registro</h4></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Registro.php"><h4>Registro</h4></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Chicas.php"><h4>Todas</h4></a>
+          <a class="nav-link text-white" href="Chicas.php"><h4>Todas</h4></a>
         </li>
       </ul>
     </div>
     </div>
-        </nav>
+  </nav>
         <h1>Perfil de las chicas magicas</h1>
     </div>
     <?php

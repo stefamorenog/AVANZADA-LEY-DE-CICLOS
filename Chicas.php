@@ -83,11 +83,31 @@ if (!empty($estado_filtrado)) {
     </script>
 </head>
 <body>
-    <h1>Chicas Mágicas Registradas</h1>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+        <a class="navbar-brand  text-white" href="Index.php"><h2>LEY DE LOS CICLOS</h2></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Registro.php"><h4>Registro</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="Chicas.php"><h4>Todas</h4></a>
+        </li>
+      </ul>
+    </div>
+    </div>
+        </nav>
+
+    <h1 class="p-4 justify-content-center">Chicas Mágicas Registradas</h1>
 
     <!-- FORMULARIO PARA FILTRAR POR ESTADO -->
     <form method="GET" action="Chicas.php">
-        <label for="estado">Filtrar por estado:</label>
+        <label class="p-2 justify-content-center" for="estado">Filtrar por estado:</label>
         <select name="estado">
             <option value="">Todos</option>
             <option value="activa" <?php if ($estado_filtrado == "activa") echo "selected"; ?>>Activa</option>
@@ -144,7 +164,3 @@ if (!empty($estado_filtrado)) {
 
 </body>
 </html>
-
-<?php
-$conn->close();
-?>

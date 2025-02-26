@@ -92,52 +92,65 @@ $conn->close();
         }
     </script>
     <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-warning">
         <div class="container-fluid">
-        <a class="navbar-brand" href="Index.php"><h2>LEY DE LOS CICLOS</h2></a>
+        <a class="navbar-brand  text-white" href="Index.php"><h2>LEY DE LOS CICLOS</h2></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="Perfil.php"><h4>Perfiles</h4></a>
+          <a class="nav-link text-white" href="Registro.php"><h4>Registro</h4></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Registro.php"><h4>Registro</h4></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Chicas.php"><h4>Todas</h4></a>
+          <a class="nav-link text-white" href="Chicas.php"><h4>Todas</h4></a>
         </li>
       </ul>
     </div>
     </div>
-        </nav>  
-        <h1>Registro de chicas magicas</h1>
-        <form action="">
+  </nav>
+      
+        <form class="form-control p-3 mb-5 bg-light justify-content-center"action="">  
+          <h1 class="p-4 justify-content-center">Registro de chicas magicas</h1>
             <div class="form-floating">
-            <input class="form-control" type="text" id="nombre" placeholder="Nombre">
+            <input class="form-control mb-3 col-md-6 w-80" type="text" id="nombre" placeholder="Nombre">
             <label class="form-label" for="nombre">Nombre Chica Magica</label>
             </div>
 
             <div class="form-floating">
-            <input class="form-control" type="text" id="edad" placeholder="Edad">
+            <input class="form-control mb-3 form-control-lg " type="text" id="edad" placeholder="Edad">
             <label class="form-label" for="edad">Edad Chica Magica</label>
             </div>
             
+            <div class="form-floating">
+            <input class="form-control mb-3 form-control-lg" type="text" id="ciudad" placeholder="Ciudad origen">
             <label class="form-label" for="ciudad">Ciudad Chica Magica</label>
-            <input class="form-control" type="text" id="ciudad" placeholder="Ciudad origen">
-            
-            <label class="form-label" for="estado">Estados</label>
+            </div>
+
+      <div class="row g-2 p2">
+          <div class="col-md">
+            <div class="form-floating">
+          
             <select class="form-select" name="estado" id="estado">
                 <option value="1">Activa</option>
                 <option value="2">Desaparecida</option>
-                <option value="3">Rescatada por la ley de los ciclos</option>
+                <<option value="3">Rescatada por la ley de los ciclos</option>
             </select>
+            <label class="form-label" for="estado">Estados</label>
+            </div>
+          </div>
            
-            <label class="form-label" for="contrato">Fecha de contrato Chica Magica</label>
+          <div class="col-md">
+            <div class="form-floating">
             <input class="form-control" type="date" id="contrato" min="2025-02-23">
-            <a class="btn btn-outline-success me-2" type="button" href="Registro.php">Registrar chica magica!</a>
+            <label class="form-label" for="contrato">Fecha de contrato Chica Magica</label>
+            </div>
+          </div>
+
+          <a class="btn btn-outline-success p-2" type="button" href="Registro.php">Registrar chica magica!</a>
+      </div>    
+            
         </form> 
    
        
