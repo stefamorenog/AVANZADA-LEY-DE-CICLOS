@@ -35,5 +35,6 @@
             <a class="btn btn-outline-success me-2" type="button" href="Chicas.php">Ver chicas registradas</a>
     </form>
     </div>
+    
 </body>
 </html>
